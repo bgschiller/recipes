@@ -17,7 +17,8 @@ Sweet Potato Muffins
 ###Directions
 
 1. Bake sweet potatoes until tender, puree until smooth. (I've also had good results boiling the potatoes).
-2. Mix sweet potato with water, oil, and eggs. Set aside.
-3. Sift together dry ingredients.
+2. In a large bowl, sift together dry ingredients. Set aside.
+3. Mix sweet potato with water, oil, and eggs.
 4. Add wet ingredients to the dry ingredients. Whisk together well until all of the flour is incorporated.
 5. Pour into muffin pans to fill 3/4 high.
+6. Bake at 350 for 10-15 minutes or until a toothpick comes out clean.
