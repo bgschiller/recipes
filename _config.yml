@@ -1,0 +1,26 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Recipes
+tagline:          'Friends cooking food for friends.'
+description:      'A collection of recipes for friends and family.'
+url:              http://brianschiller.com/recipes/
+baseurl:          /
+
+author:
+  name:           'Brian Schiller'
+  url:            http://brianschiller.com
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/bgschiller/recipes
