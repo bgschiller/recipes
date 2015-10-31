@@ -11,7 +11,7 @@ title:            Recipes
 tagline:          'Friends cooking food for friends.'
 description:      'A collection of recipes for friends and family.'
 url:              http://brianschiller.com/recipes/
-baseurl:          /
+baseurl:          /recipes/
 
 author:
   name:           'Brian Schiller'
