@@ -28,5 +28,17 @@
 
     </nav>
 
+    <div class="sidebar-filters">
+      {% for group in site.data.filters %}
+        <hr>
+        <select class="filter {{group.key}}">
+          <option value="">{{ group.name }}</option>
+          {% for choice in group.options %}
+          <option value="{{ choice.value }}">{{choice.label}}</option>
+          {% endfor %}
+        </select>
+      {% endfor %}
+    </div>
+
   </div>
 </div>

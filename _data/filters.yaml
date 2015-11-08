@@ -1,0 +1,32 @@
+- name: Course
+  key: course
+  options:
+    - {value: appetizer, label: Appetizer}
+    - {value: beverage, label: Beverage}
+    - {value: bread, label: Bread}
+    - {value: dessert, label: Dessert}
+    - {value: main_dish, label: "Main dish"}
+    - {value: finger_food, label: "Finger-food"}
+    - {value: salad, label: Salad}
+    - {value: side_dish, label: "Side dish"}
+    - {value: snack, label: Snack}
+    - {value: soup, label: Soup}
+- name: Dietary Restrictions
+  key: dietary_restrictions
+  options:
+    - {value: vegan, label: Vegan}
+    - {value: vegetarian, label: Vegetarian}
+    - {value: gluten_free, label: "Gluten-free"}
+    - {value: low_salt, label: "Low-salt"}
+- name: Timing
+  key: timing
+  options:
+    - {value: 5min, label: 5min}
+    - {value: 15min, label: 15min}
+    - {value: 30min, label: 30min}
+    - {value: 1hr+, label: 1hr+}
+- name: Contributor
+  key: contributor
+  options:
+    - {value: Brian, label: Brian}
+    - {value: Morgan, label: Morgan}
