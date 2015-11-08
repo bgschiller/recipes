@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Lemon Garlic Chicken Thighs
+contributor: Brian
 dietary_restrictions:
   - gluten_free
 course:

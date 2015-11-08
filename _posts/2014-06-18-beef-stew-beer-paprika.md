@@ -4,6 +4,7 @@ title: Beef Stew with Beer and Paprika
 source:
   url: http://tastykitchen.com/recipes/soups/beef-stew-with-beer-and-paprika/
   name: Tasty Kitchen
+contributor: Brian
 photo: images/beef_stew_with_beer_and_paprika.jpg
 course:
   - main_dish

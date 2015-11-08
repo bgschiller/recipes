@@ -2,6 +2,7 @@
 layout: post
 title: Stir Fried Veggies with Coconut Rice
 photo: images/stir-fry-coconut-rice.jpg
+contributor: Brian
 dietary_restrictions:
   - vegan
   - vegetarian
