@@ -1,6 +1,12 @@
 ---
 layout: post
 title: Lemon Garlic Chicken Thighs
+dietary_restrictions:
+  - gluten_free
+course:
+  - main_dish
+timing:
+  - 30min
 ---
 
 ### Ingredients
@@ -12,4 +18,4 @@ title: Lemon Garlic Chicken Thighs
 
 All measurements were made up. Use your best judgement.
 
-Set the oven to broil at 500°. Mix together everything but the chicken thighs. Dunk the thighs (both sides -- get some garlic on there), and place in a ovenable dish, skin-side-up. Cook for 15 minutes all together, turning over every 5 minutes.
+Set the oven to broil at 500°. Mix together everything but the chicken thighs. Dunk the thighs (both sides -- get some garlic on there), and place in a ovenable dish, skin-side-down. Cook for a total of 20 minutes, turning over every 5 minutes.
