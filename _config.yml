@@ -18,7 +18,8 @@ author:
   url:            http://brianschiller.com
 
 paginate:         5
-
+exclude:
+  - node_modules/
 # Custom vars
 version:          2.1.0
 
