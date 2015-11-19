@@ -1,7 +1,7 @@
 ---
 layout: nil
 ---
-[
+var POSTS = [
   {% for post in site.posts %}
     {
       "title": {{ post.title | jsonify }},
@@ -10,6 +10,6 @@ layout: nil
       "course": {{ post.course | jsonify }},
       "timing": {{ post.timing | jsonify }},
       "url": {{ page.url | jsonify }}
-    }
+    } {% if forloop.last == false %}, {% endif %}
   {% endfor %}
-]
+];

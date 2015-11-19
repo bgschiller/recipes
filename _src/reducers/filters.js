@@ -2,40 +2,19 @@ import { TOGGLE_FILTER, SWAP_FILTER_DISPOSITION } from '../actions'
 import { combineReducers } from 'redux'
 import _ from 'underscore'
 
-const INITIAL_STATE = {
-  course: {
-    filterDisposition: 'any_of',
-    tags: ['appetizer', 'beverage', 'main_dish']
-  },
-  dietary_restrictions: {
-    filterDisposition: 'all_of',
-    tags: ['vegetarian', 'gluten_free']
-  },
-  prep_time: {
-    filterDisposition: 'any of',
-    tags: ['5min', '15min']
-  },
-  cook_time: {
-    filterDisposition: 'any of',
-    tags: ['30min', '1hr']
-  },
-  contributor: {
-    filterDisposition: 'any of',
-    tags: ['Brian']
-  }
-}
-
+const INITIAL_STATE = window.INITIAL_STATE
 const filterableKeys = _.keys(INITIAL_STATE)
 
 function togglePresence(flags, toToggle){
-  if (_.contains(flags, toToggle)){
-    return _.reject(flags, (fl) => fl == toToggle);
-  } else {
-    return [toToggle, ...flags];
-  }
+  let ix = _.findIndex(flags, {value: toToggle})
+  return [
+    ...flags.slice(0, ix),
+    {...flags[ix], active: !flags[ix].active},
+    ...flags.slice(ix + 1)
+  ]
 }
 
-function filterDisposition(state, action){
+function filterDisposition(state = 'any', action){
   switch (action.type) {
     case SWAP_FILTER_DISPOSITION:
       return action.newDisposition
@@ -44,7 +23,7 @@ function filterDisposition(state, action){
   }
 }
 
-function tags(state, action){
+function options(state = [], action){
   switch (action.type) {
     case TOGGLE_FILTER:
       return togglePresence(state, action.option)
@@ -53,9 +32,14 @@ function tags(state, action){
   }
 }
 
+function name(state = '', action){
+  return state;
+}
+
 const filterReducer = combineReducers({
   filterDisposition,
-  tags
+  options,
+  name
 })
 
 
@@ -63,7 +47,7 @@ export default function filters(state = INITIAL_STATE, action){
   if (_.contains(filterableKeys, action.key))
     return {
       ...state,
-      [action.key]: filterReducer(state[action.key])
+      [action.key]: filterReducer(state[action.key], action)
     }
   return state
 }

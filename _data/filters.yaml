@@ -1,32 +1,36 @@
-- name: Course
-  key: course
+course:
+  name: Course
+  filterDisposition: any
   options:
-    - {value: appetizer, label: Appetizer}
-    - {value: beverage, label: Beverage}
-    - {value: bread, label: Bread}
-    - {value: dessert, label: Dessert}
-    - {value: main_dish, label: "Main dish"}
-    - {value: finger_food, label: "Finger-food"}
-    - {value: salad, label: Salad}
-    - {value: side_dish, label: "Side dish"}
-    - {value: snack, label: Snack}
-    - {value: soup, label: Soup}
-- name: Dietary Restrictions
-  key: dietary_restrictions
+    - {value: appetizer, label: Appetizer, active: true}
+    - {value: beverage, label: Beverage, active: true}
+    - {value: bread, label: Bread, active: true}
+    - {value: dessert, label: Dessert, active: true}
+    - {value: main_dish, label: "Main dish", active: true}
+    - {value: finger_food, label: "Finger-food", active: true}
+    - {value: salad, label: Salad, active: true}
+    - {value: side_dish, label: "Side dish", active: true}
+    - {value: snack, label: Snack, active: true}
+    - {value: soup, label: Soup, active: true}
+dietary_restrictions:
+  name: Dietary Restrictions
+  filterDisposition: all
   options:
-    - {value: vegan, label: Vegan}
-    - {value: vegetarian, label: Vegetarian}
-    - {value: gluten_free, label: "Gluten-free"}
-    - {value: low_salt, label: "Low-salt"}
-- name: Timing
-  key: timing
+    - {value: vegan, label: Vegan, active: false}
+    - {value: vegetarian, label: Vegetarian, active: false}
+    - {value: gluten_free, label: "Gluten-free", active: false}
+    - {value: low_salt, label: "Low-salt", active: false}
+timing:
+  name: Timing
+  filterDisposition: any
   options:
-    - {value: 5min, label: 5min}
-    - {value: 15min, label: 15min}
-    - {value: 30min, label: 30min}
-    - {value: 1hr+, label: 1hr+}
-- name: Contributor
-  key: contributor
+    - {value: 5min, label: 5min, active: true}
+    - {value: 15min, label: 15min, active: true}
+    - {value: 30min, label: 30min, active: true}
+    - {value: 1hr+, label: 1hr+, active: true}
+contributor:
+  name: Contributor
+  filterDisposition: any
   options:
-    - {value: Brian, label: Brian}
-    - {value: Morgan, label: Morgan}
+    - {value: Brian, label: Brian, active: true}
+    - {value: Morgan, label: Morgan, active: true}
